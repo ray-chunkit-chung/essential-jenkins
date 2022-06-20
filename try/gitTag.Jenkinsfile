@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "linux"
+        label any
     }
     environment {
         NEW_TAG = "${BUILD_NUMBER}"
