@@ -1,6 +1,7 @@
 pipeline {
     agent {
-        label "linux"
+        label any
+
     }
     stages {
         stage('ssh login password') {
