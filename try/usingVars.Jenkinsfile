@@ -6,6 +6,15 @@ pipeline {
 
     }
     stages {
+        stage ('git') {
+            steps {
+                echo "===== git checkout ====="
+                git branch: 'main',
+                    credentialsId: 'ray-chunkit-chung',
+                    url: 'git@github.com:ray-chunkit-chung/essential-jenkins.git'
+                sh "ls -lat"
+            }
+        }
         stage ('script in pipeline') {
             steps {
                 echo "===== script in pipeline ====="
