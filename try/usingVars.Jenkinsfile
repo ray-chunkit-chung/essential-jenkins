@@ -18,7 +18,7 @@ pipeline {
                 echo "===== load groovy functions ====="
                 script {
                     def rootDir = pwd()
-                    def exampleModule = load "${rootDir}/vars/variables.groovy"
+                    def exampleModule = load "${rootDir}/try/vars/variables.groovy"
                     exampleModule.exampleMethod()
                     exampleModule.otherExampleMethod()
                 }
