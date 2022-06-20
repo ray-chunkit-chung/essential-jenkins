@@ -2,7 +2,8 @@
 
 pipeline {
     agent {
-        label "linux"
+        label any
+
     }
     stages {
         stage ('script in pipeline') {
