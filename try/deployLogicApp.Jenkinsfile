@@ -1,7 +1,8 @@
 pipeline {
     agent {
         // label '("Machine 1 (10.0.0.0)" || "Machine 2 (10.0.0.1)")'
-        label "linux"
+        // label "linux"
+        label any
     }
     options {
         timestamps()
