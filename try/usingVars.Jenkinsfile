@@ -1,10 +1,7 @@
 // https://stackoverflow.com/questions/37800195/how-do-you-load-a-groovy-file-and-execute-it
 
 pipeline {
-    agent {
-        label any
-
-    }
+    agent any
     stages {
         stage ('git') {
             steps {
