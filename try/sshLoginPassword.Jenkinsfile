@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        label any
-
-    }
+    agent any
     stages {
         stage('ssh login password') {
             steps {
