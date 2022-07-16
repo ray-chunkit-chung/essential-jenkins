@@ -25,8 +25,11 @@ Hope this one really works..
 
 https://phoenixnap.com/kb/how-to-configure-docker-in-jenkins
 
+Or this one
+https://www.cloudbees.com/blog/how-to-install-and-run-jenkins-with-docker-compose
 
-
+Or this one
+https://stackoverflow.com/questions/36765138/bind-to-docker-socket-on-windows
 
 # Does not work => heat to pre-install docker in the image
 
