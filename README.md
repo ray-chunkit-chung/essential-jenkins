@@ -18,6 +18,14 @@ Visit in browser and enter initial password
 localhost:8080
 ```
 
+
+# Setup Docker cloud
+
+This works?? this works???
+https://stackoverflow.com/questions/55497276/how-to-find-out-or-what-is-the-correct-docker-host-url-to-use-in-jenkins-to-sp
+
+
+
 # Setup Jenkins agent node
 
 After all the effort, this is not what I am looking for. Good
@@ -109,6 +117,12 @@ https://docs.docker.jp/config/daemon/daemon.html
 ## Blue Ocean is related??!!
 
 https://stackoverflow.com/questions/55055488/jenkins-in-docker-cannot-connect-to-the-docker-daemon-at-unix-var-run-docke
+
+
+
+
+# What was wrong with using Docker-in-Docker
+This article https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
 
 
 
