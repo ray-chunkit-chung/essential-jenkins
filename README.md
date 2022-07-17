@@ -20,6 +20,8 @@ localhost:8080
 
 # Setup Jenkins agent node
 
+After all the effort, this is not what I am looking for. Good
+
 ## Reference
  - https://www.cloudbees.com/blog/how-to-install-and-run-jenkins-with-docker-compose
  - https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-masters/host-key-verification-for-ssh-agents
