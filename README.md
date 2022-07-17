@@ -28,6 +28,10 @@ https://stackoverflow.com/questions/55497276/how-to-find-out-or-what-is-the-corr
 Masu masu okashikunatteiru
 https://stackoverflow.com/questions/68144933/how-to-use-docker-agent-in-jenkinsfile-pipeline#:~:text=configure%20docker%20section%20in%20Jenkins,need%20to%20turn%20off%20selinux.
 
+How to Setup Docker Containers As Build Agents for Jenkins
+https://www.youtube.com/watch?v=ymI02j-hqpU
+
+
 
 
 # Setup Jenkins agent node
@@ -90,6 +94,11 @@ cat /etc/ssh/ssh_host_rsa_key.pub
 
 3. Paste the agent public key manually on the browser localhost > jenkins > Agent Node Configure
 
+
+
+# Setup firewall and ports in agent node
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
 
 
 # Install Docker Cloud in Jenkins
