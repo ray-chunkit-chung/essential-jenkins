@@ -25,6 +25,10 @@ This works?? this works???
 https://stackoverflow.com/questions/55497276/how-to-find-out-or-what-is-the-correct-docker-host-url-to-use-in-jenkins-to-sp
 
 
+Masu masu okashikunatteiru
+https://stackoverflow.com/questions/68144933/how-to-use-docker-agent-in-jenkinsfile-pipeline#:~:text=configure%20docker%20section%20in%20Jenkins,need%20to%20turn%20off%20selinux.
+
+
 
 # Setup Jenkins agent node
 
@@ -44,7 +48,7 @@ docker-compose.yml
 ```
 version: '3.9'
 services:
-  jenkins:
+  jenkins:d
     image: jenkins/jenkins:lts-jdk11
     restart: on-failure
     ports:

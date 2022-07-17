@@ -3,6 +3,7 @@ services:
   jenkins:
     image: jenkins/jenkins:lts-jdk11
     restart: on-failure
+    # user: root
     ports:
       - 1234:8080
       - 50000:50000
@@ -12,18 +13,18 @@ services:
       # - \\.\pipe\docker_engine:\\.\pipe\docker_engine
       # - //var/run/docker.sock:/var/run/docker.sock
       # - \\var\run\docker.sock:\var\run\docker.sock
-      # - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
       # listen using the default unix socket, and on 2 specific IP addresses on this host.    
       # $ sudo dockerd -H unix:///var/run/docker.sock -H tcp://192.168.59.106 -H tcp://10.10.10.2
       # then you can execute remote docker commands (from container to host for example)
       # $ docker -H tcp://0.0.0.0:2375 ps
-  jenkins-agent-local:
-    image: jenkins/ssh-agent:jdk11
-    container_name: jenkins-agent-local
-    expose:
-      - 22
-    environment:
-      - JENKINS_AGENT_SSH_PUBKEY=${JENKINS_AGENT_SSH_PUBKEY}
+  # jenkins-agent-local:
+  #   image: jenkins/ssh-agent:jdk11
+  #   container_name: jenkins-agent-local
+  #   expose:
+  #     - 22
+  #   environment:
+  #     - JENKINS_AGENT_SSH_PUBKEY=${JENKINS_AGENT_SSH_PUBKEY}
 
 volumes:
   jenkins_home:
